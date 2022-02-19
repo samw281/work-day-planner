@@ -1,3 +1,4 @@
+// variables for html elements
 var btn9Am = document.getElementById("btn9Am");
 var btn10Am = document.getElementById("btn10Am");
 var btn11Am = document.getElementById("btn11Am");
@@ -16,8 +17,12 @@ var text2Pm = document.getElementById("text2Pm");
 var text3Pm = document.getElementById("text3Pm");
 var text4Pm = document.getElementById("text4Pm");
 var text5Pm = document.getElementById("text5Pm");
+var currentDay = document.getElementById("currentDay");
+var currentTime = moment().format("dddd, MMMM Do");
 
-// listeners to save text to lacal storage
+currentDay.textContent = currentTime;
+
+// listeners to save text to local storage
 btn9Am.addEventListener("click", function(){
     localStorage.setItem("9AM", text9Am.value)
 });
