@@ -17,10 +17,20 @@ var text2Pm = document.getElementById("text2Pm");
 var text3Pm = document.getElementById("text3Pm");
 var text4Pm = document.getElementById("text4Pm");
 var text5Pm = document.getElementById("text5Pm");
+var time9Am = document.getElementById("time9Am")
 var currentDay = document.getElementById("currentDay");
-var currentTime = moment().format("dddd, MMMM Do");
+var currentTime = moment().format("h a");
+console.log(currentTime);
+var date = moment().format("dddd, MMMM Do");
 
-currentDay.textContent = currentTime;
+time9Am.value = moment().hour(9);
+console.log(time9Am)
+
+// displays current date in header
+currentDay.textContent = date;
+
+moment(time9Am).hour(9);
+console.log(moment(time9Am));
 
 // listeners to save text to local storage
 btn9Am.addEventListener("click", function(){
@@ -70,6 +80,15 @@ var saveText = function() {
     text4Pm.textContent = localStorage.getItem("4PM");
     text5Pm.textContent = localStorage.getItem("5PM");
 };
+
+// if statement to check current time vs time block and display accordingly
+// if ( = currentTime) {
+//     .setItem("style", "background-color: #ff6961; color: white;")
+// } else if ( > currentTime) {
+//     .setItem("stlye", "background-color: #77dd77; color: white;")
+// } else {
+//     .setItem("style", "background-color: #d3d3d3; color: white;")
+// };
 
 // save function call
 saveText();
