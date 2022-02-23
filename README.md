@@ -22,6 +22,8 @@ This project is a class assignment in which I was given starter code and tasked 
 
 https://samw281.github.io/work-day-planner/
 
+![planner-screenshot](./assets/images/work-day-planner-screenshot.png)
+
 ## Contributions
 
 Sam Williams (https://github.com/samw281)
