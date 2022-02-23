@@ -102,7 +102,7 @@ var saveText = function() {
 };
 
 // if statement's to check current time vs time block and display accordingly
-if ( time9Am.value === currentTime) {
+if ( time9Am.value == currentTime) {
     text9Am.removeClass("future")
     text9Am.removeClass("past")
     text9Am.addClass("present")
@@ -227,70 +227,6 @@ if ( time5Pm.value == currentTime) {
     text5Pm.removeClass("future")
     text5Pm.addClass("past")
 };
-
-// if ( time10Am.value === currentTime) {
-//     text10Am.setAttribute("style", "background-color: #ff6961; color: white;");
-//  } else if ( time10Am.value > currentTime) {
-//     text10Am.setAttribute("style", "background-color: #77dd77; color: white;");
-//  } else {
-//    text10Am.setAttribute("style", "background-color: #d3d3d3; color: white;");
-//  };
-
-//  if ( time11Am.value === currentTime) {
-//     text11Am.setAttribute("style", "background-color: #ff6961; color: white;");
-//  } else if ( time11Am.value > currentTime) {
-//     text11Am.setAttribute("style", "background-color: #77dd77; color: white;");
-//  } else {
-//    text11Am.setAttribute("style", "background-color: #d3d3d3; color: white;");
-//  };
- 
-//  if ( time12Pm.value === currentTime) {
-//     text12Pm.setAttribute("style", "background-color: #ff6961; color: white;");
-//  } else if ( time12Pm.value > currentTime) {
-//     text12Pm.setAttribute("style", "background-color: #77dd77; color: white;");
-//  } else {
-//    text12Pm.setAttribute("style", "background-color: #d3d3d3; color: white;");
-//  };
- 
-//  if ( time1Pm.value === currentTime) {
-//     text1Pm.setAttribute("style", "background-color: #ff6961; color: white;");
-//  } else if ( time1Pm.value > currentTime) {
-//     text1Pm.setAttribute("style", "background-color: #77dd77; color: white;");
-//  } else {
-//    text1Pm.setAttribute("style", "background-color: #d3d3d3; color: white;");
-//  };
-
-//  if ( time2Pm.value === currentTime) {
-//     text2Pm.setAttribute("style", "background-color: #ff6961; color: white;");
-//  } else if ( time2Pm.value > currentTime) {
-//     text2Pm.setAttribute("style", "background-color: #77dd77; color: white;");
-//  } else {
-//    text2Pm.setAttribute("style", "background-color: #d3d3d3; color: white;");
-//  };
-
-//  if ( time3Pm.value === currentTime) {
-//     text3Pm.setAttribute("style", "background-color: #ff6961; color: white;");
-//  } else if ( time3Pm.value > currentTime) {
-//     text3Pm.setAttribute("style", "background-color: #77dd77; color: white;");
-//  } else {
-//    text3Pm.setAttribute("style", "background-color: #d3d3d3; color: white;");
-//  };
-
-//  if ( time4Pm.value === currentTime) {
-//     text4Pm.setAttribute("style", "background-color: #ff6961; color: white;");
-//  } else if ( time4Pm.value > currentTime) {
-//     text4Pm.setAttribute("style", "background-color: #77dd77; color: white;");
-//  } else {
-//    text4Pm.setAttribute("style", "background-color: #d3d3d3; color: white;");
-//  };
-
-//  if ( time5Pm.value === currentTime) {
-//     text5Pm.setAttribute("style", "background-color: #ff6961; color: white;");
-//  } else if ( time5Pm.value > currentTime) {
-//     text5Pm.setAttribute("style", "background-color: #77dd77; color: white;");
-//  } else {
-//    text5Pm.setAttribute("style", "background-color: #d3d3d3; color: white;");
-//  };
 
 // save function call
 saveText();
