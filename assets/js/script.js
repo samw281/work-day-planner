@@ -49,11 +49,12 @@ time5Pm.value = 17;
 
 // displays current date in header
 currentDay.textContent = date;
+console.log(text9Am.value)
 
 
 // listeners to save text to local storage
 btn9Am.addEventListener("click", function(){
-    localStorage.setItem("9AM", text9Am.value)
+    localStorage.setItem("9AM", text9Am.val)
 });
 
 btn10Am.addEventListener("click", function(){
@@ -90,7 +91,7 @@ btn5Pm.addEventListener("click", function(){
 
 // funtion to load text from local storage
 var saveText = function() {
-    text9Am.textContent = localStorage.getItem("9AM");
+    $("#text9Am").text(localStorage.getItem("9AM"));
     text10Am.textContent = localStorage.getItem("10AM");
     text11Am.textContent = localStorage.getItem("11AM");
     text12Pm.textContent = localStorage.getItem("12PM");
@@ -100,6 +101,10 @@ var saveText = function() {
     text4Pm.textContent = localStorage.getItem("4PM");
     text5Pm.textContent = localStorage.getItem("5PM");
 };
+
+
+
+saveText();
 
 // if statement's to check current time vs time block and display accordingly
 if ( time9Am.value == currentTime) {
